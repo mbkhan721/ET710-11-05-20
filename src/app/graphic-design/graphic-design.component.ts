@@ -7,15 +7,15 @@ import { CartService } from '../cart.service';
   styleUrls: ['./graphic-design.component.css']
 })
 export class GraphicDesignComponent implements OnInit {
-
-  shippingCosts;
+  portfolioItems;
 
   constructor(
     private cartService: CartService
   ) { }
 
   ngOnInit() {
-    this.shippingCosts = this.cartService.getPortfolio();
+    this.portfolioItems = this.cartService.getPortfolio();
+
   }
 
 }
